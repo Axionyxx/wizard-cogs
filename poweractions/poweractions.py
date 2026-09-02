@@ -51,7 +51,7 @@ class Button(discord.ui.View):
 ACTION_TIMEOUT = 5
 
 def short_version(version: str) -> str:
-    return version[:6]
+    return version[:7]
 
 async def doaction(session: aiohttp.ClientSession, server, action: str, params: Optional[dict] = None) -> tuple[int, str]:
     async def load() -> tuple[int, str]:
